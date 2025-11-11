@@ -1,0 +1,4 @@
+- name: Copy README.md from role files to HOME
+  copy:
+    src: /root/devops_prod/ansible/readme/README.md 
+    dest: "{{ ansible_env.HOME }}/README.md"
